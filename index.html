@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Cambio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>💱 Simulador de Cambio</h1>
+      <p>Convierte tus pesos a otras monedas con un click</p>
+    </header>
+
+    <main>
+      <div class="card-container">
+        <!-- Dólar -->
+        <div class="card">
+          <div class="card-front">
+            <h2>USD</h2>
+            <p>Dólar</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-usd">Monto en pesos:</label>
+            <input type="number" id="monto-usd" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="usd">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+
+        <!-- Euro -->
+        <div class="card">
+          <div class="card-front">
+            <h2>EUR</h2>
+            <p>Euro</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-eur">Monto en pesos:</label>
+            <input type="number" id="monto-eur" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="eur">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+
+        <!-- Real -->
+        <div class="card">
+          <div class="card-front">
+            <h2>BRL</h2>
+            <p>Real</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-brl">Monto en pesos:</label>
+            <input type="number" id="monto-brl" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="brl">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+
+        <!-- Libra -->
+        <div class="card">
+          <div class="card-front">
+            <h2>GBP</h2>
+            <p>Libra</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-usd">Monto en pesos:</label>
+            <input type="number" id="monto-lbr" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="lbr">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+
+        <!-- Yen -->
+        <div class="card">
+          <div class="card-front">
+            <h2>JPY</h2>
+            <p>Yen</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-yen">Monto en pesos:</label>
+            <input type="number" id="monto-yen" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="yen">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+
+        <!-- Dolar canadiense -->
+        <div class="card">
+          <div class="card-front">
+            <h2>CAD</h2>
+            <p>Dolar Canadiense</p>
+            <button class="flip-btn">Convertir</button>
+          </div>
+          <div class="card-back">
+            <label for="monto-cad">Monto en pesos:</label>
+            <input type="number" id="monto-cad" placeholder="Ingrese monto" />
+            <button class="convert-btn" data-moneda="cad">Calcular</button>
+            <button class="back-btn">Volver</button>
+            <p class="resultado"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>💡 Simulador de cambio hecho con HTML, CSS y JS — 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
