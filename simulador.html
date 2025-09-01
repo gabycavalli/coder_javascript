@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simulador de Cambio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="welcome"></h1>
+    </header>
+
+    <main>
+      <div class="cards">
+        <div class="card" data-moneda="USD">
+          <div class="card-inner">
+            <div class="card-front">$ Dólar</div>
+            <div class="card-back">
+              <input type="number" placeholder="Ingrese pesos" class="monto" />
+              <button class="convertir">Convertir</button>
+              <button class="back-btn">Volver</button>
+              <p class="resultado"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-moneda="EUR">
+          <div class="card-inner">
+            <div class="card-front">€ Euro</div>
+            <div class="card-back">
+              <input type="number" placeholder="Ingrese pesos" class="monto" />
+              <button class="convertir">Convertir</button>
+              <button class="back-btn">Volver</button>
+              <p class="resultado"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-moneda="BRL">
+          <div class="card-inner">
+            <div class="card-front">R$ Real</div>
+            <div class="card-back">
+              <input type="number" placeholder="Ingrese pesos" class="monto" />
+              <button class="convertir">Convertir</button>
+              <button class="back-btn">Volver</button>
+              <p class="resultado"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-moneda="CAD">
+          <div class="card-inner">
+            <div class="card-front">$ CAD</div>
+            <div class="card-back">
+              <input type="number" placeholder="Ingrese pesos" class="monto" />
+              <button class="convertir">Convertir</button>
+              <button class="back-btn">Volver</button>
+              <p class="resultado"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-moneda="BTC">
+          <div class="card-inner">
+            <div class="card-front">BTC</div>
+            <div class="card-back">
+              <input type="number" placeholder="Ingrese pesos" class="monto" />
+              <button class="convertir">Convertir</button>
+              <button class="back-btn">Volver</button>
+              <p class="resultado"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="historial">
+        <h2>Historial de conversiones</h2>
+        <ul id="historial-list"></ul>
+        <button id="clearHistorial">Borrar Historial</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Simulador de Cambio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
