@@ -24,8 +24,9 @@ simulador/
 ## 🚀 **Instalación y Uso**
 
 1. **Clonar el repositorio**
+
    ```bash
-   git clone https://github.com/tu-usuario/simulador-divisas.git
+   git clone https://github.com/gabycavalli/coder_javascript.git
    ```
 
 2. **Abrir el archivo** `index.html` **en tu navegador**.
@@ -40,31 +41,34 @@ simulador/
 ## 🛠️ **Funcionalidades Técnicas**
 
 ### 🔄 **Conversión de Divisas**
+
 - La conversión se realiza dividiendo el **monto ingresado** por la **tasa de cambio** correspondiente.
-- **Ejemplo:**  
+- **Ejemplo:**
   ```bash
   1000 ARS ÷ 350 (USD) = 2.86 USD
   ```
 
 ### 🗂️ **Historial**
+
 - Se almacena automáticamente en **localStorage**.
 - La interfaz muestra **las últimas 5 conversiones**.
 - Opción para **eliminar historial** dinámicamente.
 
 ### 🔔 **Alertas con SweetAlert2**
+
 SweetAlert2 se utiliza para mostrar mensajes visuales y atractivos:
 
-- ✅ **Historial vacío**  
-- 🗑️ **Historial eliminado correctamente**  
+- ✅ **Historial vacío**
+- 🗑️ **Historial eliminado correctamente**
 - 💡 **Información sobre conversiones**
 
 ---
 
 ## 🌟 **Mejoras Futuras**
 
-- 🔹 Soporte para **más monedas**.  
-- 🔹 Implementar una **API en tiempo real** para obtener tasas actualizadas.  
-- 🔹 Mejorar la **validación de datos** ingresados por el usuario.  
+- 🔹 Soporte para **más monedas**.
+- 🔹 Implementar una **API en tiempo real** para obtener tasas actualizadas.
+- 🔹 Mejorar la **validación de datos** ingresados por el usuario.
 - 🔹 Optimizar el **diseño responsivo** para dispositivos móviles.
 
 ---
@@ -73,8 +77,7 @@ SweetAlert2 se utiliza para mostrar mensajes visuales y atractivos:
 
 **Gabriel Cavalli**  
 📅 Proyecto desarrollado en **septiembre 2025**.  
-📧 Contacto: [gabriel.cavalli@example.com](mailto:gabriel.cavalli@example.com)  
-🌐 [LinkedIn](https://linkedin.com/in/tuusuario)  
+📧 Contacto: [gabriel.cavalli@gmail.com](mailto:gabriel.cavalli@gmail.com)
 
 ---
 
