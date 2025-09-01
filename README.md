@@ -1,45 +1,86 @@
-# Simulador de Cambio de Moneda
+# 💱 Simulador de Conversión de Divisas
 
-Este proyecto es un simulador básico de cambio de monedas hecho con HTML y JavaScript, ideal para principiantes.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7E018?style=for-the-badge&logo=javascript&logoColor=black)
+![SweetAlert2](https://img.shields.io/badge/SweetAlert2-FF69B4?style=for-the-badge&logo=javascript&logoColor=white)
+![LocalStorage](https://img.shields.io/badge/LocalStorage-3C873A?style=for-the-badge&logo=google-chrome&logoColor=white)
 
-## 📌 Descripción
+---
 
-El simulador permite al usuario ingresar una cantidad de **pesos argentinos** mediante un `prompt`. Luego, muestra en la consola del navegador el equivalente en:
+## 📂 **Estructura del Proyecto**
 
-- Dólares estadounidenses (USD)
-- Euros (EUR)
-- Reales brasileños (BRL)
+```
+simulador/
+├── index.html          # Página de inicio (login)
+├── simulador.html      # Página principal del simulador
+├── style.css           # Estilos del proyecto
+├── script.js           # Lógica principal del simulador
+├── cotizaciones.json   # Tasas de cambio (debe estar en el servidor)
+```
 
-Los valores de cambio son **fijos** para simplificar el ejercicio.
+---
 
-## 💻 Tecnologías usadas
+## 🚀 **Instalación y Uso**
 
-- HTML5
-- JavaScript (sin frameworks)
-- Uso de `prompt()` y `console.log()`
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/simulador-divisas.git
+   ```
 
-## 🔢 Tasas de conversión utilizadas
+2. **Abrir el archivo** `index.html` **en tu navegador**.
 
-- 1 USD = 1300 ARS
-- 1 EUR = 1100 ARS
-- 1 BRL = 230 ARS
+3. **Seguir los pasos en la app:**
+   - Ingresa tu **nombre** en la página de inicio.
+   - Realiza **conversiones** en la página principal.
+   - Visualiza y gestiona el **historial** de conversiones.
 
-## 🧪 Ejecución
+---
 
-1. Abrir el archivo `index.html` en un navegador (se recomienda con Live Server).
-2. Ingresar la cantidad de pesos cuando aparezca el `prompt`.
-3. Ver los resultados en la consola (`F12` > pestaña Console).
+## 🛠️ **Funcionalidades Técnicas**
 
-## 📂 Archivos
+### 🔄 **Conversión de Divisas**
+- La conversión se realiza dividiendo el **monto ingresado** por la **tasa de cambio** correspondiente.
+- **Ejemplo:**  
+  ```bash
+  1000 ARS ÷ 350 (USD) = 2.86 USD
+  ```
 
-- `index.html`: Estructura principal de la página.
-- `script.js`: Lógica del simulador en JavaScript.
+### 🗂️ **Historial**
+- Se almacena automáticamente en **localStorage**.
+- La interfaz muestra **las últimas 5 conversiones**.
+- Opción para **eliminar historial** dinámicamente.
 
-## 📚 Objetivo educativo
+### 🔔 **Alertas con SweetAlert2**
+SweetAlert2 se utiliza para mostrar mensajes visuales y atractivos:
 
-Este ejercicio tiene como objetivo practicar:
+- ✅ **Historial vacío**  
+- 🗑️ **Historial eliminado correctamente**  
+- 💡 **Información sobre conversiones**
 
-- Uso básico de JavaScript
-- Variables y operadores
-- Interacción con el usuario (prompt)
-- Lógica condicional
+---
+
+## 🌟 **Mejoras Futuras**
+
+- 🔹 Soporte para **más monedas**.  
+- 🔹 Implementar una **API en tiempo real** para obtener tasas actualizadas.  
+- 🔹 Mejorar la **validación de datos** ingresados por el usuario.  
+- 🔹 Optimizar el **diseño responsivo** para dispositivos móviles.
+
+---
+
+## 👨‍💻 **Autor**
+
+**Gabriel Cavalli**  
+📅 Proyecto desarrollado en **septiembre 2025**.  
+📧 Contacto: [gabriel.cavalli@example.com](mailto:gabriel.cavalli@example.com)  
+🌐 [LinkedIn](https://linkedin.com/in/tuusuario)  
+
+---
+
+## 📄 **Licencia**
+
+Este proyecto es **de uso libre**.  
+Siéntete libre de **modificarlo** y **adaptarlo** a tus necesidades.
+
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
